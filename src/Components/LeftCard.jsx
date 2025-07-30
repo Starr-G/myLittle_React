@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import Logo from '../assets/Logo.svg';
 
 
-const LeftCard = ({title}) => {
+const LeftCard = ({darkmode,toggleDarkmode}) => {
+    // const [darkmode, setDarkmode] = useState(false)
     const [institution, setInstitution] = useState('')
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
+    
     const theLogin = (e) => {
         // e.preventDefault()
         console.log('Institution_Code', institution)
@@ -15,11 +17,15 @@ const LeftCard = ({title}) => {
     }
 
     return (
-        <>            
+        <div className= 'left-card-wrapper'>
+            <button type="button" className="theme-toggle" onClick={toggleDarkmode}>
+                {darkmode ? '☀️' : '🌑'}
+            </button>
+
             <form className='login-form' onSubmit={theLogin} action="">
                 <div>
-                <img className="logo" src={Logo} alt="Qore Logo" />
-            </div>   
+                    <img className="logo" src={Logo} alt="Qore Logo" />
+                </div>   
                 <h1>Log in</h1>
                 <p>Welcome back! Please enter your details.</p>
                 <div>
@@ -44,7 +50,7 @@ const LeftCard = ({title}) => {
                 </a>
             
             </form>
-        </>
+        </div>
     )
 }
 
