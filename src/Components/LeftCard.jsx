@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../assets/Logo.svg';
+import Logo1 from '../assets/Logo1.svg';
 
 
 const LeftCard = ({darkmode,toggleDarkmode}) => {
@@ -24,7 +24,7 @@ const LeftCard = ({darkmode,toggleDarkmode}) => {
 
             <form className='login-form' onSubmit={theLogin} action="">
                 <div>
-                    <img className="logo" src={Logo} alt="Qore Logo" />
+                    <img className="logo" src={Logo1} alt="Qore Logo" />
                 </div>   
                 <h1>Log in</h1>
                 <p>Welcome back! Please enter your details.</p>

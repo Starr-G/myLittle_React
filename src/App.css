@@ -35,11 +35,44 @@ body, html {
 .right-card {
   flex: 1;
   background-image: url('/Section.svg');
+  background-blend-mode: overlay;
+  background-color:rgba(0, 0, 0, 0.726); 
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.right-card-text{
+  display: inline;
+  margin: 10px;
+  justify-content: left;
+  margin-top: 200px;
+  align-self: flex-end;
+  padding: 20px;
+  padding-left: 60px;
+  padding-top: 200px;
+}
+
+.right-card-text h1{
+  width: 300px;
+  height: 50px;
+  font-size: 41.6px;
+}
+
+.right-card-text h2 {
+  width: 450px;
+  height: 50px;
+  font-size: 43px;
+}
+
+.right-card-text p{
+  width: 400px;
+  height: 20px;
+  font-size: 16px;
+  padding-top: 20px;
+  color: #5bcabf;
 }
 
 .logo {
@@ -50,6 +83,17 @@ body, html {
 .logo img {
   height: 45px;
   margin-bottom: 40px;
+}
+
+.logo2 {
+    margin-bottom: 30px;
+    height: 80px;
+    width: 80px;
+}
+
+.logo2 img{
+  padding-bottom: 0px;
+  width: 100px;
 }
 
 .login-form {
