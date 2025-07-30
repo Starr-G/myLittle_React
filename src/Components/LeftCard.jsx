@@ -8,7 +8,7 @@ const LeftCard = ({title}) => {
     const [password, setPassword] = useState('')
 
     const theLogin = (e) => {
-        e.preventDefault()
+        // e.preventDefault()
         console.log('Institution_Code', institution)
         console.log('Username:', username);
         console.log('Password:', password);
