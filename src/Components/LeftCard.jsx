@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Logo from '../assets/Logo.svg';
 
 
-const LeftCard = {title} => {
+const LeftCard = ({title}) => {
     const [institution, setInstitution] = useState('')
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
