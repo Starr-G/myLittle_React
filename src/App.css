@@ -1,3 +1,14 @@
+@media (max-width: 1024px) {
+  .right-card {
+    display: none !important;
+  }
+
+  .left-card-wrapper {
+    display: flex !important;
+    width: 100% !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
